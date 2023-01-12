@@ -11,9 +11,13 @@ async function criarVideo(evento) {
 
 	const descricao = Math.floor(Math.random() * 10).toString()
 
-	await conectaApi.criaVideos(titulo, descricao, url, imagem)
+	try {
+		await conectaApi.criaVideos(titulo, descricao, url, imagem)
 
-	window.location.href = "../pages/envio-concluido.html"
+		window.location.href = "../pages/envio-concluido.html"
+	} catch (e) {
+		window.location.href = "../pages/erro-enviar-video.html"
+	}
 }
 
 formulario.addEventListener("submit", (evento) => criarVideo(evento))
