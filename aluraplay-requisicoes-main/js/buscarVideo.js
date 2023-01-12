@@ -23,6 +23,10 @@ async function buscarVideo(evento) {
 			)
 		)
 	)
+
+	if (busca.length == 0) {
+		lista.innerHTML = `<h2 class="mensagem__titulo">Não existe vídeos com esse termo, tente novamente...</h2>`
+	}
 }
 
 const botaoDePesquisa = document.querySelector("[data-botao-pesquisa]")
