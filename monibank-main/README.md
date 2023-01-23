@@ -7,9 +7,9 @@
 
 ## Tecnologias utilizadas durante o curso
 
-- JavaScript
+- [x] JavaScript
 
 ## Tecnologias utilizadas no projeto
 
-- HTML
-- CSS
+- [x] HTML
+- [x] CSS
