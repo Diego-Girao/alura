@@ -2,8 +2,9 @@ const btnIniciarCamera = document.querySelector("[data-video-botao]")
 const campoCamera = document.querySelector("[data-camera]")
 const video = document.querySelector("[data-video]")
 const btnTirarFoto = document.querySelector("[data-tirar-foto")
-const canva = document.querySelector("[data-video-canvas]")
+const canvas = document.querySelector("[data-video-canvas]")
 const mensagem = document.querySelector("[data-mensagem]")
+const btnEnviarFoto = document.querySelector("[data-enviar]")
 
 let imagemURL = ""
 
@@ -19,9 +20,20 @@ btnIniciarCamera.addEventListener("click", async function () {
 })
 
 btnTirarFoto.addEventListener("click", function () {
-	canva.getContext("2d").drawImage(video, 0, 0, canva.width, canva.height)
-	imagemURL = canva.toDataURL("image/jpeg")
+	canvas.getContext("2d").drawImage(video, 0, 0, canvas.width, canvas.height)
+	imagemURL = canvas.toDataURL("image/jpeg")
 
 	campoCamera.style.display = "none"
 	mensagem.style.display = "block"
+})
+
+btnEnviarFoto.addEventListener("click", () => {
+	const receberCadastroExistente = localStorage.getItem("cadastro")
+	const converteRetorno = JSON.parse(receberCadastroExistente)
+
+	converteRetorno.imagem = imagemURL
+
+	localStorage.setItem("cadastro", JSON.stringify(converteRetorno))
+
+	window.location.href = "./abrir-conta-form-3.html"
 })
