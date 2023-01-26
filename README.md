@@ -1,4 +1,10 @@
-# ![image](https://user-images.githubusercontent.com/70491871/208189622-1c182a26-0e96-4fcf-bbad-9e778dd341a1.png)
+<div align="center">
 
+<img align="center" alt="logo alura" title="Alura" src="https://raw.githubusercontent.com/MonicaHillman/aluraplay-requisicoes/main/img/logo.png" />
+<img align="center" width="140px" alt="logo totvs" title="TOTVS" src="https://logodownload.org/wp-content/uploads/2019/12/totvs-logo.png" />
 
-## Repositório destinado as minhas aulas do curso Frontend.
+# Formação Frontend Alura | TOTVS
+
+### Repositório destinado aos projetos do curso da Formação Frontend da Alura em parceria com a TOTVS.
+
+</div>
