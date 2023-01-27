@@ -1,7 +1,7 @@
 <div align="center">
 
-<img align="center" alt="logo alura" title="Alura" src="https://raw.githubusercontent.com/MonicaHillman/aluraplay-requisicoes/main/img/logo.png" />
-<img align="center" width="140px" alt="logo totvs" title="TOTVS" src="https://logodownload.org/wp-content/uploads/2019/12/totvs-logo.png" />
+<img align="center" alt="logo alura" title="Alura" src="https://cursos.alura.com.br/assets/images/logos/logo-alura.svg" />
+<img align="center" alt="logo totvs" title="TOTVS" src="https://alura-comercial.s3.amazonaws.com/logos/totvs.png" />
 
 # Formação Frontend Alura | TOTVS
 
